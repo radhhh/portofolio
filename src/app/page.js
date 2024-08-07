@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import LandingPage from "../components/landing";
 import AboutPage from "../components/about";
+import ExperiencePage from "../components/experience";
 
 export default function Page() {
   return (
@@ -9,6 +10,7 @@ export default function Page() {
       <main>
         <LandingPage />
         <AboutPage />
+        <ExperiencePage />
       </main>
     </div>
   );
