@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <section className="flex min-h-screen items-center justify-center p-20">
       <div className="max-w-5xl">
-        <h1 className="mb-4 text-5xl text-neutral-300 font-bold">About</h1>
+        <h1 className="mb-4 text-5xl font-bold text-neutral-300">About</h1>
         <div className="flex items-center gap-8">
           <div className="flex-auto text-2xl">
             <p className="mb-2">
