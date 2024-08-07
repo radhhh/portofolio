@@ -27,8 +27,8 @@ I'm a freshman student in Computer Science program in Universitas Indonesia (UI)
 
 1. Obrolin
    GPT-powered website to assist information lookup for people with dyslexia. Supports voice input and text-to-speech with word highlighting (device setup required).
-2. Tic-Tac-Toe
-   Tic-tac-toe written using vanilla JS. With various AI levels.
+2. Tic Tac Toe
+   Tic tac toe game written using vanilla JS. With various AI levels.
 3. Web Calculator
    Online Calculator with keyboard support.
 

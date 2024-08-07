@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Obrolin",
+    "description": "GPT-powered website to assist people with dyslexia. Supports voice input and TTS.",
+    "imgName": "obrolin"
+  },
+  {
+    "name": "Tic-Tac-Toe",
+    "description": "Tic-tac-toe game written using vanilla JS. With various AI levels.",
+    "imgName": "tic-tac-toe"
+  },
+  {
+    "name": "Web Calculator",
+    "description": "Online Calculator with keyboard support",
+    "imgName": "web-calculator"
+  }
+]
