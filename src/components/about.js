@@ -3,10 +3,10 @@ import profilePicture from "../../public/static/profile.jpg";
 
 export default function AboutPage() {
   return (
-    <section className="flex min-h-screen items-center justify-center p-20">
+    <section className="flex min-h-screen items-center justify-center p-8 md:p-14 lg:p-20">
       <div className="max-w-5xl">
         <h1 className="mb-4 text-5xl font-bold text-neutral-300">About</h1>
-        <div className="flex items-center gap-8">
+        <div className="flex items-left gap-8 flex-col-reverse lg:flex-row lg:items-center">
           <div className="flex-auto text-2xl">
             <p className="mb-2">
               I&apos;m a <strong>freshman</strong> student in{" "}

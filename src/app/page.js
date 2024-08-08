@@ -3,6 +3,7 @@ import LandingPage from "../components/landing";
 import AboutPage from "../components/about";
 import ExperiencePage from "../components/experience";
 import WorkPage from "../components/work";
+import ContactPage from "../components/contact"
 
 export default function Page() {
   return (
@@ -13,6 +14,7 @@ export default function Page() {
         <AboutPage />
         <ExperiencePage />
         <WorkPage />
+        <ContactPage />
       </main>
     </div>
   );

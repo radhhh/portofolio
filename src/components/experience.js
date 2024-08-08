@@ -6,7 +6,7 @@ export default async function ExperiencePage() {
   );
   const experienceElements = experiences.map((experience) => (
     <li key={experience.name}>
-      <a href={experience.link} className="mb-6 flex">
+      <a href={experience.link} className="mb-6 flex flex-col lg:flex-row">
         <div className="flex-1 text-lg">{experience.timespan}</div>
         <div className="flex-[4] text-lg">
           <h2 className="mb-1 text-2xl text-neutral-300">
@@ -29,7 +29,7 @@ export default async function ExperiencePage() {
   ));
 
   return (
-    <section className="flex min-h-screen items-center justify-center p-20">
+    <section className="flex min-h-screen items-center justify-center p-8 lg:p-20">
       <div className="max-w-5xl">
         <h1 className="mb-8 text-5xl font-bold text-neutral-300">Experience</h1>
         <ol>{experienceElements}</ol>

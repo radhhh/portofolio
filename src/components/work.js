@@ -24,10 +24,10 @@ export default async function WorkPage() {
   return (
     <section className="flex min-h-screen items-center justify-center p-20">
       <div className="max-w-5xl">
-        <h1 className="mb-8 text-center text-5xl font-bold text-neutral-300">
+        <h1 className="mb-8 text-5xl font-bold text-neutral-300">
           Work
         </h1>
-        <ul className="grid min-w-full gap-8 lg:grid-cols-3">{workElements}</ul>
+        <ul className="grid min-w-full gap-8 md:grid-cols-2 lg:grid-cols-3">{workElements}</ul>
       </div>
     </section>
   );
