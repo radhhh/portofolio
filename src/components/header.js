@@ -2,7 +2,7 @@
 
 export default function Header() {
   return (
-    <header className="fixed left-0 top-0 z-50 flex w-[100%] items-center justify-between bg-neutral-800 p-6 text-neutral-300">
+    <header className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-neutral-800 p-6 text-neutral-300">
       <NavButton target="landing">
         <h1 className="text-3xl">CK</h1>
       </NavButton>

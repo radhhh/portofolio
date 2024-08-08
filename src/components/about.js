@@ -12,7 +12,7 @@ export default function AboutPage() {
           About
         </h1>
         <div className="flex flex-col items-center gap-8 md:flex-row">
-          <div className="flex-auto text-center text-2xl md:text-left">
+          <div className="flex-auto text-center text-xl md:text-left lg:text-2xl">
             <p className="mb-2">
               I&apos;m a <strong>freshman</strong> student in{" "}
               <strong>Computer Science</strong> program in{" "}
@@ -20,9 +20,9 @@ export default function AboutPage() {
               in everything related to computers.
             </p>
             <p className="mb-2">
-              Coming from a <strong>Competitive Programming</strong> background,
+              Coming from a <strong>competitive programming</strong> background,
               I started learning
-              <strong> Web Development</strong> in 2023. Over the past two
+              <strong> web development</strong> in 2023. Over the past two
               years, I&apos;ve been developing websites for{" "}
               <strong>various projects</strong>, both personal and professional
               ones.

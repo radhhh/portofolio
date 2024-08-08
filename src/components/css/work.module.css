@@ -2,12 +2,17 @@
   .work:hover {
     @apply -translate-y-2;
   }
+}
+.work:active {
+  @apply -translate-y-2;
+}
 
-  .work:hover h2 {
-    @apply text-neutral-100;
-  }
+.work:hover h2,
+.work:active h2 {
+  @apply text-neutral-100;
+}
 
-  .work:hover .thumbnail {
-    @apply opacity-100;
-  }
+.work:hover .thumbnail,
+.work:active .thumbnail {
+  @apply opacity-100;
 }
