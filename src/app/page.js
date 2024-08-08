@@ -3,7 +3,7 @@ import LandingPage from "../components/landing";
 import AboutPage from "../components/about";
 import ExperiencePage from "../components/experience";
 import WorkPage from "../components/work";
-import ContactPage from "../components/contact"
+import ContactPage from "../components/contact";
 
 export default function Page() {
   return (

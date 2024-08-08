@@ -5,9 +5,11 @@ export default function AboutPage() {
   return (
     <section className="flex min-h-screen items-center justify-center p-8 md:p-14 lg:p-20">
       <div className="max-w-5xl">
-        <h1 className="mb-4 text-5xl font-bold text-neutral-300">About</h1>
-        <div className="flex items-left gap-8 flex-col-reverse lg:flex-row lg:items-center">
-          <div className="flex-auto text-2xl">
+        <h1 className="mb-4 text-center text-5xl font-bold text-neutral-300 md:text-left">
+          About
+        </h1>
+        <div className="flex flex-col items-center gap-8 md:flex-row">
+          <div className="flex-auto text-center text-2xl md:text-left">
             <p className="mb-2">
               I&apos;m a <strong>freshman</strong> student in{" "}
               <strong>Computer Science</strong> program in{" "}
@@ -31,7 +33,7 @@ export default function AboutPage() {
             <Image
               src={profilePicture}
               alt="Profile Picture"
-              className="max-h-64 max-w-64"
+              className="max-h-96 max-w-96 md:max-h-64 md:max-w-64"
             />
           </div>
         </div>

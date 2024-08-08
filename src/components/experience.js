@@ -1,12 +1,13 @@
 import { promises as fs } from "fs";
+import styles from "./css/experience.module.css";
 
 export default async function ExperiencePage() {
   const experiences = JSON.parse(
     await fs.readFile(process.cwd() + "/public/experience.json", "utf-8"),
   );
   const experienceElements = experiences.map((experience) => (
-    <li key={experience.name}>
-      <a href={experience.link} className="mb-6 flex flex-col lg:flex-row">
+    <li key={experience.name} className={styles.content}>
+      <a href={experience.link} className={"flex flex-col p-3 md:flex-row"}>
         <div className="flex-1 text-lg">{experience.timespan}</div>
         <div className="flex-[4] text-lg">
           <h2 className="mb-1 text-2xl text-neutral-300">
@@ -32,7 +33,7 @@ export default async function ExperiencePage() {
     <section className="flex min-h-screen items-center justify-center p-8 lg:p-20">
       <div className="max-w-5xl">
         <h1 className="mb-8 text-5xl font-bold text-neutral-300">Experience</h1>
-        <ol>{experienceElements}</ol>
+        <ol className={styles.container}>{experienceElements}</ol>
         <div></div>
       </div>
     </section>
