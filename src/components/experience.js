@@ -1,10 +1,36 @@
-import { promises as fs } from "fs";
 import styles from "./css/experience.module.css";
 
-export default async function ExperiencePage() {
-  const experiences = JSON.parse(
-    await fs.readFile(process.cwd() + "/public/experience.json", "utf-8"),
-  );
+const experiences = [
+  {
+    name: "Padzcode",
+    role: "Founder",
+    timespan: "2023 - 2024",
+    description:
+      "Founded Padzcode, an extracurricular for students interested in programming, focusing at web development. Taught web development basics to 30+ students. Co-developed extracurricular website for an exhibition.",
+    tag: ["HTML", "CSS", "JS"],
+    link: "https://padzcode-website.vercel.app",
+  },
+  {
+    name: "Pustakita",
+    role: "Co-Founder",
+    timespan: "Aug - Dec 2023",
+    description:
+      "Co-founded Pustakita as a charity organization concerned in education and literacy. Developed and maintained pustakita.id website, a book-sharing platform similar to a digital library for people in Yogyakarta region.",
+    tag: ["WordPress", "WooCommerce"],
+    link: "https://pustakita.id",
+  },
+  {
+    name: "BKGN UGM 2023",
+    role: "Web Developer",
+    timespan: "Aug - Sep 2023",
+    description:
+      "Developed and maintained event website. Handled the registration of 1000+ participants in 2 batches. Filtered, processed, and verified the data in under two days. Migrated the entire registration system from Forminator to Woocommerce overnight.",
+    tag: ["WordPress", "WooCommerce", "Forminator"],
+    link: "https://bkgnugm.id",
+  },
+];
+
+export default function ExperiencePage() {
   const experienceElements = experiences.map((experience) => (
     <li key={experience.name} className={"mb-4 " + styles.content}>
       <a href={experience.link} className={"flex flex-col p-4 md:flex-row"}>

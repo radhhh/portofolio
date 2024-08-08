@@ -12,7 +12,7 @@ export default function AboutPage() {
           About
         </h1>
         <div className="flex flex-col items-center gap-8 md:flex-row">
-          <div className="flex-auto text-center text-xl md:text-left lg:text-2xl">
+          <div className="flex-auto text-center text-xl md:text-left md:text-2xl">
             <p className="mb-2">
               I&apos;m a <strong>freshman</strong> student in{" "}
               <strong>Computer Science</strong> program in{" "}

@@ -1,11 +1,29 @@
 import WorkElements from "./workElements.js";
-import { promises as fs } from "fs";
 
-export default async function WorkPage() {
-  const works = JSON.parse(
-    await fs.readFile(process.cwd() + "/public/work.json", "utf-8"),
-  );
+const works = [
+  {
+    id: "obrolin",
+    name: "Obrolin",
+    description:
+      "GPT-powered website to assist people with dyslexia. Supports voice input and TTS.",
+    link: "https://obrolin-app.netlify.app",
+  },
+  {
+    id: "tic-tac-toe",
+    name: "Tic-Tac-Toe",
+    description:
+      "Tic-tac-toe game written using vanilla JS. With various AI levels.",
+    link: "https://radhhh.github.io/tic-tac-toe",
+  },
+  {
+    id: "web-calculator",
+    name: "Web Calculator",
+    description: "Online Calculator with keyboard support",
+    link: "https://radhhh.github.io/web-calculator",
+  },
+];
 
+export default function WorkPage() {
   return (
     <section
       className="flex min-h-screen items-center justify-center p-20"
