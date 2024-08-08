@@ -6,8 +6,8 @@ export default async function ExperiencePage() {
     await fs.readFile(process.cwd() + "/public/experience.json", "utf-8"),
   );
   const experienceElements = experiences.map((experience) => (
-    <li key={experience.name} className={styles.content}>
-      <a href={experience.link} className={"flex flex-col p-3 md:flex-row"}>
+    <li key={experience.name} className={"mb-4 " + styles.content}>
+      <a href={experience.link} className={"flex flex-col p-4 md:flex-row"}>
         <div className="flex-1 text-lg">{experience.timespan}</div>
         <div className="flex-[4] text-lg">
           <h2 className="mb-1 text-2xl text-neutral-300">
@@ -30,7 +30,10 @@ export default async function ExperiencePage() {
   ));
 
   return (
-    <section className="flex min-h-screen items-center justify-center p-8 lg:p-20">
+    <section
+      className="flex min-h-screen items-center justify-center p-8 lg:p-20"
+      id="experience"
+    >
       <div className="max-w-5xl">
         <h1 className="mb-8 text-5xl font-bold text-neutral-300">Experience</h1>
         <ol className={styles.container}>{experienceElements}</ol>

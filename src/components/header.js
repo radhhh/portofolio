@@ -1,15 +1,29 @@
+"use client";
+
 export default function Header() {
   return (
     <header className="fixed left-0 top-0 z-50 flex w-[100%] items-center justify-between bg-neutral-800 p-6 text-neutral-300">
-      <div>
+      <NavButton target="landing">
         <h1 className="text-3xl">CK</h1>
-      </div>
+      </NavButton>
       <nav className="flex gap-6 align-middle text-xl">
-        <button>About</button>
-        <button>Experience</button>
-        <button>Works</button>
-        <button>Contact</button>
+        <NavButton target="about">About</NavButton>
+        <NavButton target="experience">Experience</NavButton>
+        <NavButton target="work">Work</NavButton>
+        <NavButton target="contact">Contact</NavButton>
       </nav>
     </header>
+  );
+}
+
+function NavButton({ target, children }) {
+  return (
+    <button
+      onClick={(e) =>
+        document.getElementById(target).scrollIntoView({ behavior: "smooth" })
+      }
+    >
+      {children}
+    </button>
   );
 }

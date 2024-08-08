@@ -1,8 +1,14 @@
-.container:hover > .content {
-  opacity: 0.7;
-}
+@media (hover: hover) and (pointer: fine) {
+  .container:hover > .content {
+    opacity: 0.7;
+  }
 
-.content:hover {
-  @apply bg-neutral-800;
-  opacity: 1 !important;
+  .content:hover {
+    @apply bg-neutral-800;
+    opacity: 1 !important;
+  }
+
+  .content {
+    @apply transition-all duration-100;
+  }
 }

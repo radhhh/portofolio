@@ -1,19 +1,20 @@
 "use client";
 import Image from "next/image";
+import styles from "./css/work.module.css";
 
 export default function WorkElements({ works }) {
   return works.map((work) => (
-    <li
-      key={work.id}
-      className="max-w-96 border border-solid border-neutral-700 p-6 text-left transition-all hover:-translate-y-4"
-    >
-      <a href={work.link}>
+    <li key={work.id} className="max-w-96 shadow-md">
+      <a
+        href={work.link}
+        className={`${styles.work} block h-full bg-neutral-800 p-6 text-left transition-all`}
+      >
         <Image
           src={`/static/${work.id}.png`}
           alt="Image"
           width={1920}
           height={1080}
-          className="mb-4"
+          className={`${styles.thumbnail} mb-6 opacity-95`}
         />
         <div className="flex items-center justify-between text-neutral-300">
           <h2 className="mb-1 text-2xl">{work.name}</h2>
@@ -25,6 +26,7 @@ export default function WorkElements({ works }) {
                 .open("https://github.com/radhhh/" + work.id, "_blank")
                 .focus();
             }}
+            className="hover:text-neutral-100"
           >
             <svg
               className="relative -top-1 h-6 w-6"

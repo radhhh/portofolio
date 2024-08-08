@@ -1,6 +1,9 @@
 export default function ContactPage() {
   return (
-    <section className="flex min-h-screen items-center justify-center p-20">
+    <section
+      className="flex min-h-screen items-center justify-center p-20"
+      id="contact"
+    >
       <div className="max-w-5xl flex-auto text-2xl">
         <h1 className="mb-4 text-5xl font-bold text-neutral-300">Contact</h1>
         <a

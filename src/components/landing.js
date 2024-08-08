@@ -1,6 +1,9 @@
 export default function LandingPage() {
   return (
-    <section className="flex min-h-screen items-center p-8 lg:p-20">
+    <section
+      className="flex min-h-screen items-center p-8 lg:p-20"
+      id="landing"
+    >
       <div>
         <div className="mb-4 text-hero">
           <h1 className="mb-2 font-bold leading-none text-neutral-300">
