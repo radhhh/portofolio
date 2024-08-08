@@ -35,16 +35,28 @@ export default function Header({ show }) {
       <nav
         className={`navDropdown ${openMenu ? "open" : ""} absolute right-3 top-24 bg-neutral-800 p-6 text-2xl`}
       >
-        <NavButton closeMenu={closeMenu} target="about" className="mb-3">
+        <NavButton
+          closeMenu={closeMenu}
+          target="about"
+          className="mb-3 underline"
+        >
           About
         </NavButton>
-        <NavButton closeMenu={closeMenu} target="experience" className="mb-3">
+        <NavButton
+          closeMenu={closeMenu}
+          target="experience"
+          className="mb-3 underline"
+        >
           Experience
         </NavButton>
-        <NavButton closeMenu={closeMenu} target="work" className="mb-3">
+        <NavButton
+          closeMenu={closeMenu}
+          target="work"
+          className="mb-3 underline"
+        >
           Work
         </NavButton>
-        <NavButton closeMenu={closeMenu} target="contact">
+        <NavButton closeMenu={closeMenu} target="contact" className="underline">
           Contact
         </NavButton>
       </nav>

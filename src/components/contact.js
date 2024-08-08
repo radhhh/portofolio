@@ -8,7 +8,7 @@ export default function ContactPage() {
         <h1 className="mb-4 text-5xl font-bold text-neutral-300">Contact</h1>
         <a
           href="https://github.com/radhhh"
-          className="mb-2 flex items-center gap-2"
+          className="mb-2 flex items-center gap-2 hover:text-neutral-300 active:text-neutral-300"
         >
           <svg
             className="h-8 w-8"
@@ -28,7 +28,7 @@ export default function ContactPage() {
         </a>
         <a
           href="mailto:radhyacahya.k@gmail.com"
-          className="mb-2 flex items-center gap-2"
+          className="mb-2 flex items-center gap-2 hover:text-neutral-300 active:text-neutral-300"
         >
           <svg
             className="h-8 w-8"
@@ -48,7 +48,7 @@ export default function ContactPage() {
         </a>
         <a
           href="https://linkedin.com/in/radhya-cahya-kusuma"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 hover:text-neutral-300 active:text-neutral-300"
         >
           <svg
             className="h-8 w-8"
