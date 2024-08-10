@@ -1,3 +1,4 @@
+"use client";
 import styles from "./css/experience.module.css";
 
 const experiences = [
@@ -16,7 +17,7 @@ const experiences = [
     timespan: "Aug - Dec 2023",
     description:
       "Co-founded Pustakita as a charity organization concerned in education and literacy. Developed and maintained pustakita.id website, a book-sharing platform similar to a digital library for people in Yogyakarta region.",
-    tag: ["WordPress", "WooCommerce"],
+    tag: ["WordPress", "WooCommerce", "PHP"],
     link: "https://pustakita.id",
   },
   {
@@ -25,7 +26,7 @@ const experiences = [
     timespan: "Aug - Sep 2023",
     description:
       "Developed and maintained event website. Handled the registration of 1000+ participants in 2 batches. Filtered, processed, and verified the data in under two days. Migrated the entire registration system from Forminator to Woocommerce overnight.",
-    tag: ["WordPress", "WooCommerce", "Forminator"],
+    tag: ["WordPress", "WooCommerce", "Forminator", "PHP"],
     link: "https://bkgnugm.id",
   },
 ];
@@ -44,7 +45,7 @@ export default function ExperiencePage() {
             {experience.tag.map((tag) => (
               <li
                 key={tag}
-                className="mr-4 inline-block rounded-lg bg-neutral-800 px-3 py-1 text-base"
+                className="mb-2 mr-4 inline-block rounded-lg bg-neutral-800 px-3 py-1 text-base"
               >
                 {tag}
               </li>

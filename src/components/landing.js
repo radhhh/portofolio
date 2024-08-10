@@ -1,3 +1,5 @@
+import { NavButton } from "./component";
+
 export default function LandingPage() {
   return (
     <section
@@ -12,16 +14,12 @@ export default function LandingPage() {
           <h2 className="font-bold leading-none">Fullstack Web Developer.</h2>
         </div>
         <p className="mb-8 text-2xl">I bring visions to life through code.</p>
-        <button
-          onClick={() =>
-            document
-              .getElementById("contact")
-              .scrollIntoView({ behavior: "smooth" })
-          }
-          className="rounded-lg border border-s border-solid border-neutral-300 p-2 text-2xl text-neutral-300"
+        <NavButton
+          target="contact"
+          className="rounded-lg border border-s border-solid border-neutral-300 p-2 text-2xl text-neutral-300 hover:scale-105 active:scale-105"
         >
           Contact Me!
-        </button>
+        </NavButton>
       </div>
     </section>
   );
