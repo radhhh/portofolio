@@ -9,20 +9,22 @@ export default function Header() {
 
   useEffect(() => {
     const controlNavbar = () => {
-      if (window.scrollY > lastScrollY) {
+      if (window.lastScrollY == lastScrollY) return;
+
+      if (showHeader && window.scrollY - lastScrollY > 5) {
         setShowHeader(false);
-      } else {
+      } else if (!showHeader && lastScrollY - window.scrollY > 10) {
         setShowHeader(true);
       }
       setLastScrollY(window.scrollY);
     };
 
-    window.addEventListener("scroll", controlNavbar);
+    const interval = setInterval(controlNavbar, 50);
 
     return () => {
-      window.removeEventListener("scroll", controlNavbar);
+      clearInterval(interval);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY, showHeader]);
 
   function closeMenu() {
     setOpenMenu(false);
