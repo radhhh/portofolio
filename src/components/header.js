@@ -11,9 +11,14 @@ export default function Header() {
     const controlNavbar = () => {
       if (window.lastScrollY == lastScrollY) return;
 
-      if (showHeader && window.scrollY - lastScrollY > 5) {
+      if (
+        window.scrollY + window.innerHeight / 2 >
+        document.getElementById("about").offsetTop
+      ) {
         setShowHeader(false);
-      } else if (!showHeader && lastScrollY - window.scrollY > 10) {
+      } else if (showHeader && window.scrollY - lastScrollY > 5) {
+        setShowHeader(false);
+      } else if (!showHeader && lastScrollY - window.scrollY > 5) {
         setShowHeader(true);
       }
       setLastScrollY(window.scrollY);
