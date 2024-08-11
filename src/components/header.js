@@ -12,8 +12,9 @@ export default function Header() {
       if (window.lastScrollY == lastScrollY) return;
 
       if (
+        window.innerWidth > 1280 &&
         window.scrollY + window.innerHeight / 2 >
-        document.getElementById("about").offsetTop
+          document.getElementById("about").offsetTop
       ) {
         setShowHeader(false);
       } else if (showHeader && window.scrollY - lastScrollY > 5) {

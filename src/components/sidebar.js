@@ -6,8 +6,10 @@ const sections = ["landing", "about", "experience", "work", "contact"];
 export default function Sidebar() {
   const [activeSection, setActiveSection] = useState("landing");
   const [screenHeight, setScreenHeight] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(0);
   useEffect(() => {
     setScreenHeight(window.innerHeight);
+    setScreenWidth(window.innerWidth);
     const offsets = sections.map(
       (section) => document.getElementById(section).offsetTop,
     );
@@ -20,17 +22,18 @@ export default function Sidebar() {
         }
       }
       setScreenHeight(window.innerHeight);
+      setScreenWidth(window.innerWidth);
     }
 
-    const interval = setInterval(monitorChange, 20);
+    const interval = setInterval(monitorChange, 50);
     return () => clearInterval(interval);
-  }, [activeSection, screenHeight]);
+  }, [activeSection, screenHeight, screenWidth]);
 
   return (
     <nav
       className={
         "fixed top-1/2 flex -translate-y-1/2 flex-col items-center transition-all " +
-        (activeSection == "landing"
+        (activeSection == "landing" || screenWidth <= 1280
           ? "invisible left-0 opacity-0"
           : "opacity-1 visible left-8")
       }
